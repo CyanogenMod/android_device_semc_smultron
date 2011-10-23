@@ -39,6 +39,9 @@ DEVICE=smultron
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/us104-keyboard.kcm.bin:system/usr/keychars/us104-keyboard.kcm.bin \\
+vendor/__VENDOR__/__DEVICE__/proprietary/us104-keyboard.kl:system/usr/keylayout/104-keyboard.kl \\
+vendor/__VENDOR__/__DEVICE__/proprietary/usb_mouse.kl:system/usr/keylayout/usb_mouse.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty.kcm.bin:system/usr/keychars/pm8058-keypad.kcm.bin \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \\
@@ -88,16 +91,12 @@ vendor/__VENDOR__/__DEVICE__/proprietary/liboemcamera.so:system/lib/liboemcamera
 vendor/__VENDOR__/__DEVICE__/proprietary/libcamera.so:obj/lib/libcamera.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcamera.so:system/lib/libcamera.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcamera_clientsemc.so:system/lib/libcamera_clientsemc.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_common.so:system/lib/libopencore_common.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libmmjpeg.so:system/lib/libmmjpeg.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libmmipl.so:system/lib/libmmipl.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libcald_api.so:system/lib/libcald_api.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcald_client.so:system/lib/libcald_client.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcald_debugger.so:system/lib/libcald_debugger.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcald_hal.so:system/lib/libcald_hal.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcald_imageutil.so:system/lib/libcald_imageutil.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libcald_omxcamera.so:system/lib/libcald_omxcamera.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libcald_omxcamera_plugin.so:system/lib/libcald_omxcamera_plugin.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcald_pal.so:system/lib/libcald_pal.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcald_server.so:system/lib/libcald_server.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcameraextensionclient.so:system/lib/libcameraextensionclient.so \\
@@ -119,8 +118,7 @@ vendor/__VENDOR__/__DEVICE__/proprietary/STW05BN0_IMX072.dat:system/usr/semc/cam
 
 ## FIRMWARE
 PRODUCT_COPY_FILES += \\
-vendor/__VENDOR__/__DEVICE__/proprietary/bq27520_fw-0501_filever-0041_proj-mang_golden.bqfs:system/etc/firmware/bq27520_fw-0041_filever-0107_proj-mang_golden.bqfs \\
-vendor/__VENDOR__/__DEVICE__/proprietary/bq27520_fw-0501_filever-0041_proj-mang_golden.dffs:system/etc/firmware/bq27520_fw-0041_filever-0107_proj-mang_golden.dffs \\
+vendor/__VENDOR__/__DEVICE__/proprietary/bq27520_fw-0507_filever-0046_proj-mang_golden.bqfs:system/etc/firmware/bq27520_fw-0507_filever-0046_proj-mang_golden.bqfs \\
 vendor/__VENDOR__/__DEVICE__/proprietary/fm_rx_init_1273.1.bts:system/etc/firmware/fm_rx_init_1273.1.bts \\
 vendor/__VENDOR__/__DEVICE__/proprietary/fm_rx_init_1273.2.bts:system/etc/firmware/fm_rx_init_1273.2.bts \\
 vendor/__VENDOR__/__DEVICE__/proprietary/fm_tx_init_1273.1.bts:system/etc/firmware/fm_tx_init_1273.1.bts \\
