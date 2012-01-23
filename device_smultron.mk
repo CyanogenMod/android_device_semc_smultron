@@ -7,20 +7,11 @@ $(call inherit-product-if-exists, vendor/semc/smultron/smultron-vendor.mk)
 
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := smultron
+PRODUCT_NAME := Xperia Mini
 PRODUCT_DEVICE := smultron
-PRODUCT_MODEL := smultron
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/semc/smultron/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+PRODUCT_MODEL := ST15i
 
 -include device/semc/mogami-common/mogami.mk
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
@@ -29,10 +20,11 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/smultron/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
-	device/semc/smultron/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
+    device/semc/smultron/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
 
 # Init files
 PRODUCT_COPY_FILES += \
+    device/semc/smultron/prebuilt/pre_hw_config.sh:system/etc/pre_hw_config.sh \
     device/semc/smultron/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     device/semc/smultron/prebuilt/bootrec:root/sbin/bootrec \
     device/semc/msm7x30-common/prebuilt/logo_M.rle:root/logo.rle \
@@ -49,8 +41,7 @@ PRODUCT_COPY_FILES += \
     device/semc/msm7x30-common/prebuilt/animations/charging_animation_04_M.png:system/semc/chargemon/data/charging_animation_04.png \
     device/semc/msm7x30-common/prebuilt/animations/charging_animation_05_M.png:system/semc/chargemon/data/charging_animation_05.png \
     device/semc/msm7x30-common/prebuilt/animations/charging_animation_06_M.png:system/semc/chargemon/data/charging_animation_06.png \
-    device/semc/msm7x30-common/prebuilt/animations/charging_animation_07_M.png:system/semc/chargemon/data/charging_animation_07.png \
-    device/semc/msm7x30-common/prebuilt/animations/charging_animation_blank_M.png:system/semc/chargemon/data/charging_animation_blank.png
+    device/semc/msm7x30-common/prebuilt/animations/charging_animation_07_M.png:system/semc/chargemon/data/charging_animation_07.png
 
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libril-qc-1.so \

@@ -26,4 +26,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_smultron.mk 
+    $(LOCAL_DIR)/device_smultron.mk
