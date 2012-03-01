@@ -30,6 +30,7 @@ lib/libpbmlib.so
 lib/libqmi.so
 lib/libqueue.so
 lib/libuim.so
+lib/libreference-ril.so
 lib/libril-qc-1.so
 lib/libwms.so
 lib/libwmsts.so
@@ -100,7 +101,6 @@ etc/wifi/softap/tiwlan_firmware_ap.bin
 lib/libaudioalsa.so
 etc/vold.fstab
 etc/sensors.conf
-lib/hw/sensors.default.so
 bin/bq275xx_fwloader
 bin/akmd8975
 bin/chargemon
