@@ -1,0 +1,8 @@
+Change-Id: I9a1dbf58e2a2388b3566919550329315d7af0c18
+Code-Review+2: Steve Kondik <shade@chemlab.org>
+Verified+1: Steve Kondik <shade@chemlab.org>
+Submitted-by: Steve Kondik <shade@chemlab.org>
+Submitted-at: Fri, 23 Mar 2012 09:47:26 +0300
+Reviewed-on: http://review.cyanogenmod.com/13722
+Project: CyanogenMod/android_device_semc_smultron
+Branch: refs/heads/ics
