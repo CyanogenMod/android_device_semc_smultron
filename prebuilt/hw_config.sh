@@ -43,15 +43,15 @@ echo 0 > $dev/button-backlight-rgb2/als/enable  #Sensor on/off. 1 = on, reg 90h
 echo 0 > $dev/red/als/enable  #Sensor on/off. 1 = on, reg 90h
 echo 0 > $dev/green/als/enable  #Sensor on/off. 1 = on, reg 90h
 echo 0 > $dev/blue/als/enable  #Sensor on/off. 1 = on, reg 90h
-echo 3,2,2,0 > $dev/lcd-backlight/als/params  #[gain],[filter_up],[filter_down],[offset]
+echo 0,0,0,0 > $dev/lcd-backlight/als/params  #[gain],[filter_up],[filter_down],[offset]
 echo 8000 > $dev/button-backlight-rgb1/max_current
 echo 8000 > $dev/button-backlight-rgb2/max_current
-echo 1,30,255,54,52,1,65 > $dev/lcd-backlight/als/curve  # ALS curve display BL [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 2,48,0,128,128,4,10 > $dev/button-backlight-rgb1/als/curve  # ALS curve key LED 1 [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 2,48,0,128,128,4,10 > $dev/button-backlight-rgb2/als/curve  # ALS curve key LED 2 [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 3,71,255,64,32,5,37 > $dev/red/als/curve  # ALS curve RGB(red) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 3,71,255,64,32,5,37 > $dev/green/als/curve  # ALS curve RGB(green) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
-echo 3,71,255,64,32,5,37 > $dev/blue/als/curve  # ALS curve RGB(blue) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
+echo 0,0,0,0,0,0,0 > $dev/lcd-backlight/als/curve  # ALS curve display BL [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
+echo 0,0,0,0,0,0,0 > $dev/button-backlight-rgb1/als/curve  # ALS curve key LED 1 [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
+echo 0,0,0,0,0,0,0 > $dev/button-backlight-rgb2/als/curve  # ALS curve key LED 2 [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
+echo 0,0,0,0,0,0,0 > $dev/red/als/curve  # ALS curve RGB(red) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
+echo 0,0,0,0,0,0,0 > $dev/green/als/curve  # ALS curve RGB(green) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
+echo 0,0,0,0,0,0,0 > $dev/blue/als/curve  # ALS curve RGB(blue) [grp],[Y0],[Y3],[K1],[K2],[X1],[X2]
 
 # Touch panel
 dev=/sys/devices/platform/spi_qsd.0/spi0.0
