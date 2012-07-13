@@ -2,6 +2,7 @@
 usr/idc/cyttsp-spi.idc
 usr/keylayout/atdaemon.kl
 usr/keylayout/AVRCP.kl
+usr/keylayout/Generic.kl
 usr/keylayout/msm_pmic_pwr_key.kl
 usr/keylayout/pm8058-keypad.kl
 usr/keylayout/simple_remote.kl
